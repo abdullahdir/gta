@@ -1,0 +1,128 @@
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Desktop/learn git again/.git/
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) b50811f] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git log
+commit b50811fa4a8542cebe46e4bb164ab5355e79b92d (HEAD -> master)
+Author: abdullahjdir <abdullahjdir@gmail.com>
+Date:   Wed Jun 7 09:42:32 2023 +0100
+
+    adding third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add fourth.txt
+fatal: pathspec 'fourth.txt' did not match any files
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git commit -m"adding fourth.txt"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fourth.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git commit -m"removing"
+[master c5a64cc] removing
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git add .
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git log
+commit c5a64ccd10a44bd4eb62ca677237f882b0fa34a7 (HEAD -> master)
+Author: abdullahjdir <abdullahjdir@gmail.com>
+Date:   Wed Jun 7 09:59:22 2023 +0100
+
+    removing
+
+commit b50811fa4a8542cebe46e4bb164ab5355e79b92d
+Author: abdullahjdir <abdullahjdir@gmail.com>
+Date:   Wed Jun 7 09:42:32 2023 +0100
+
+    adding third.txt
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git config--global to find out how to do this
+git: 'config--global' is not a git command. See 'git --help'.
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Admin@DESKTOP-K6LDLUB MINGW64 ~/Desktop/learn git again (master)
+$
